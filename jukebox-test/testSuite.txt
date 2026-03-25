@@ -1,0 +1,17 @@
+Cenario de testes 1 - Validação do front-end 
+	Caso de testes 1 - Validação da tela inicial (titulo, box de pesquisa, botão de pesuisa)
+
+Cenario de testes 2 - Pesquisa e adição de musicas
+	Caso de teste 1 - Pesquisas validas (digitando o nome)
+	Caso de teste 2 - Pesquisas validas (com o uso de json)
+	Caso de teste 3 - Pesquisa com caracteres especiais (uso de json)
+	Caso de teste 4 - Pesquisa em branco
+	Caso de teste 5 - Validação do comportamento de loading
+
+Cenario de testes 3 - Adição de musicas
+	Caso de teste 1 - Adicionar uma musica (validação da mensagem de sucesso) 
+	Caso de teste 2 - Adicionar tres musicas (maximo permitidos pelos requisitos)
+	Caso de teste 3 - Adicionar quatro musicas (acima do permitido - validação da mensagem de erro) 
+
+
+

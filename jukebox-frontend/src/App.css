@@ -1,0 +1,158 @@
+/* src/App.css */
+
+/* Estilos gerais da página */
+body {
+  background-color: #282c34;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilos do cabeçalho */
+.App-header {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #61dafb;
+}
+
+/* Estilos da barra de busca */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1ed760;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #168d44;
+}
+
+button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+/* Estilos da lista de músicas */
+.track-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.track-item {
+  /* Combina as regras de estilo para cada item da lista */
+  display: flex;
+  align-items: center; /* Alinha verticalmente os itens */
+  justify-content: space-between; /* Mantém a imagem/texto e o botão separados */
+  background-color: #3a3f47;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  /* Removendo a regra "border-bottom" pois o "margin-bottom" já cria espaçamento */
+  /* Removendo "padding: 10px" para usar o "padding: 15px" acima */
+}
+
+.track-item:hover {
+  transform: translateY(-5px);
+}
+
+.track-info {
+  /* Alinha os itens em uma coluna */
+  display: flex;
+  flex-direction: column;
+  text-align: left; /* Garante que o texto dentro seja alinhado à esquerda */
+  flex-grow: 1; /* Permite que o contêiner ocupe todo o espaço disponível */
+  margin-right: 20px; /* Espaço entre o texto e o botão */
+}
+
+.album-cover {
+  width: 64px;
+  height: 64px;
+  border-radius: 5px;
+  margin-right: 15px; /* Espaço à direita da imagem */
+}
+
+.track-name {
+  font-weight: bold;
+  display: block;
+  font-size: 1.1rem;
+  /* Alinhamento do título à esquerda, movido para um container mais específico */
+  text-align: left;
+}
+
+.track-artists {
+  color: #aaa;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+/* Estilos para o botão "Adicionar à Fila" */
+.track-item button {
+  width: 150px;
+  min-width: 150px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50px;
+  background-color: #1ed760;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.track-item button:hover {
+  background-color: #168d44;
+}
+
+/* Estilo para mensagens de erro */
+.error-message {
+    color: #fff;
+    background-color: #dc3545; /* Vermelho padrão para erros */
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilo para mensagens de sucesso/informação */
+.info-message {
+    color: #fff;
+    background-color: #28a745; /* Verde padrão para sucesso */
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,15 @@
+{
+  "buscaValida": {
+    "termo": "Even Flow",
+    "artistaEsperado": "Pearl Jam"
+  },
+  "buscaEspecial": {
+    "termo": "Panic! At The Disco",
+    "artistaEsperado": "Panic! At The Disco"
+  },
+  "listaMusicas": [
+    "Black",
+    "Jeremy",
+    "Yellow Ledbetter"
+  ]
+}

@@ -1,0 +1,23 @@
+# Arquivos de segredos
+.env
+
+# Pastas de IDE e Sistema
+.metadata/
+.settings/
+.classpath
+.project
+.DS_Store
+
+# Pastas de Build (serão geradas dentro do Docker)
+**/target/
+**/node_modules/
+**/dist/
+**/build/
+
+# Cypress (vídeos e prints de erro)
+**/cypress/videos/
+**/cypress/screenshots/
+
+# Pasta de logs do Spring/Wrapper do Maven
+.mvn/
+help.md

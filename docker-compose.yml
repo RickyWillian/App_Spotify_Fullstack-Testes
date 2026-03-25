@@ -1,0 +1,24 @@
+services:
+  backend:
+    build: ./jukebox-backend
+    ports:
+      - "8888:8888"
+    environment:
+      - SPOTIFY_CLIENT_ID=${SPOTIFY_CLIENT_ID}
+      - SPOTIFY_CLIENT_SECRET=${SPOTIFY_CLIENT_SECRET}
+      - SPOTIFY_REFRESH_TOKEN=${SPOTIFY_REFRESH_TOKEN}
+
+  frontend:
+    build: ./jukebox-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  cypress:
+    build: ./jukebox-test
+    environment:
+      - CYPRESS_baseUrl=http://frontend:3000
+    depends_on:
+      - backend
+      - frontend

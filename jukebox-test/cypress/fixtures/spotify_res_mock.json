@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "name": "Even Flow",
+    "uri": "spotify:track:688DCDlsbsu96mU60Znygn",
+    "artists": [{ "name": "Pearl Jam" }],
+    "album": {
+      "name": "Ten",
+      "images": [{ "url": "https://via.placeholder.com/150" }]
+    }
+  },
+  {
+    "id": "2",
+    "name": "Black",
+    "uri": "spotify:track:5Xak5fmy089tBRubpOK79M",
+    "artists": [{ "name": "Pearl Jam" }],
+    "album": {
+      "name": "Ten",
+      "images": [{ "url": "https://via.placeholder.com/150" }]
+    }
+  }
+]
